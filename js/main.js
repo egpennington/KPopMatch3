@@ -47,8 +47,8 @@ document.querySelector(".menu-btn").addEventListener("click", () =>
   document.querySelector(".main-menu").classList.toggle("show"))
 
 // === spotify access token === 
-const clientID = 'fad030dcaf64485891b8ff58fbeb6dd5';
-const clientSecret = '20cc1533205b4611bc34f4eb5da89e7d';
+const clientID = '12345678910891b8ff58fbeb6dd5';
+const clientSecret = '12345678542534f4eb5da89e7d';
 const authorizationCode = 'AUTHORIZATION_CODE_FROM_REDIRECT_URI';
 const redirectURI = 'YOUR_REDIRECT_URI';
 
