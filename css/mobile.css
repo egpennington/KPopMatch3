@@ -1,0 +1,85 @@
+/* === Mobile CSS === */
+  #navbar {
+    padding-top: 20px;
+  }
+
+  #navbar .logo {
+    float: left;
+    margin-right: 10px;
+    height: 65px;
+  }
+  
+  #navbar ul,
+  #navbar ul li {
+    float: none;
+  }
+  
+  #navbar ul li a:hover {
+    color: red;
+  }
+  
+  #navbar ul li a {
+    padding: 5px;
+    border-bottom: #444 dotted 1px;
+  }
+
+/* === hamburger menu === */
+  .menu-btn {
+    display: block;
+    margin-right: 20px;
+  }
+    
+  .menu-btn:hover {
+     opacity: 0.65;
+  }
+    
+  .main-menu {
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background: #333;
+     width: 50%;
+     height: 100%;
+     border-right: #ccc 1px solid;
+     opacity: 0.8;
+     margin-top: 70px;
+     padding: 30px;
+     transform: translateX(-500px);
+     transition: transform 0.5s ease-in-out;
+  }
+
+  ul.main-menu.show {
+    transform: translateX(-20px);
+  }
+
+  ul.main-menu li {
+     padding: 10px;
+     border-bottom: #ccc solid 1px;
+     font-size: 14px;
+     display: flex;
+     color: #ddd;
+  }
+    
+  ul.main-menu li:last-child {
+    border-bottom: 0;
+  }
+  
+  .main-menu.show {
+    transform: translateX(50px);
+  }
+  
+  @media(max-width: 525px) {
+    .content {
+      flex-direction: column;
+      margin: 0 auto;
+}
+
+    .left-col h1 {
+      margin: 0 auto;
+ }
+
+    .right-col {
+      margin: 0 auto;
+  }
+}
